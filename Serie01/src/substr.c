@@ -23,7 +23,7 @@ static void *xmalloc(size_t size)
 
 static char *substring(const char *str, off_t pos, size_t len)
 {
-	if (pos < 0 || len < 0 || strlen(str) <= (pos + len))
+	if (pos < 0 || strlen(str) <= (pos + len))
 		panic("Substring out of bounds!\n");
 
 	char *start = xmalloc(len);
