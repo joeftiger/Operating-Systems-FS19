@@ -53,3 +53,6 @@ dkms.conf
 
 # Compressed Files
 *.zip
+
+# Build folders
+cmake-build-*/
