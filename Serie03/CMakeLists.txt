@@ -6,6 +6,6 @@ find_package(Threads)
 SET(CMAKE_CXX_FLAGS -pthread)
 # I need to manually compile statistics.c to make it work.
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
 add_executable(Resources src/resources.c)
